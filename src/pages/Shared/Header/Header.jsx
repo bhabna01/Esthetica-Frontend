@@ -31,9 +31,12 @@ const Header = () => {
                         {navitems}
                     </ul>
                 </div>
-                <Link to='/'>
-                    <img src={logo} className="w-12 h-12"></img>
-                </Link>
+                <div className="flex ">
+                    <Link to='/'>
+                        <img src={logo} className="w-12 h-12"></img>
+                    </Link>
+                    <h2 className="mt-4 ml-3 font-bold">Esthetica Salon</h2>
+                </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

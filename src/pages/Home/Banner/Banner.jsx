@@ -9,7 +9,7 @@ const Banner = () => {
                 <img
                     src={img1}
                     className="w-full rounded-xl" />
-                <div className="absolute flex h-full left-0 bg-gradient-to-r from-black to-[rgba(21,21,21,0)] top-0  items-center">
+                <div className=" rounded-xl absolute flex h-full left-0 bg-gradient-to-r from-black to-[rgba(21,21,21,0)] top-0  items-center">
                     <div className="text-white space-y-7 pl-12 w-1/2">
                         <h2 className="text-6xl font-bold">Affordable prices for beauty Service</h2>
                         <p>Elevate Your Beauty, Embrace Your Confidence – Experience Luxury with Every Service.</p>
@@ -29,7 +29,7 @@ const Banner = () => {
                 <img
                     src={img2}
                     className="w-full rounded-xl" />
-                <div className="absolute flex h-full left-0 bg-gradient-to-r from-black to-[rgba(21,21,21,0)] top-0  items-center">
+                <div className=" rounded-xl absolute flex h-full left-0 bg-gradient-to-r from-black to-[rgba(21,21,21,0)] top-0  items-center">
                     <div className="text-white space-y-7 pl-12 w-1/2">
                         <h2 className="text-6xl font-bold">Affordable prices for beauty Service</h2>
                         <p>Elevate Your Beauty, Embrace Your Confidence – Experience Luxury with Every Service.</p>
@@ -49,7 +49,7 @@ const Banner = () => {
                 <img
                     src={img3}
                     className="w-full rounded-xl" />
-                <div className="absolute flex h-full left-0 bg-gradient-to-r from-black to-[rgba(21,21,21,0)] top-0  items-center">
+                <div className="  rounded-xl absolute flex h-full left-0 bg-gradient-to-r from-black to-[rgba(21,21,21,0)] top-0  items-center">
                     <div className="text-white space-y-7 pl-12 w-1/2">
                         <h2 className="text-6xl font-bold">Affordable prices for beauty Service</h2>
                         <p>Elevate Your Beauty, Embrace Your Confidence – Experience Luxury with Every Service.</p>
