@@ -1,0 +1,158 @@
+[
+    {
+        "_id": "635a0c0b64a6d231228942ae",
+        "service_id": "04",
+        "title": "Facial Treatment",
+        "img": "https://i.ibb.co/dp75HCS/pic1.jpg",
+        "price": "50.00",
+        "description": "Experience our rejuvenating facial treatment designed to cleanse, exfoliate, and hydrate your skin. Our skilled estheticians use premium products to give your skin a radiant and youthful glow. Perfect for all skin types, this treatment will leave you feeling refreshed and revitalized.",
+        "facility": [
+            {
+                "name": "Instant Beauty Services",
+                "details": "Get pampered instantly with our on-demand beauty services at your convenience."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Our expert beauty professionals are available around the clock to provide top-notch service."
+            },
+            {
+                "name": "Easy Booking",
+                "details": "Book your appointment easily online or via our app, with flexible time slots available."
+            },
+            {
+                "name": "Affordable Luxury",
+                "details": "Enjoy luxurious beauty treatments at affordable prices without compromising on quality."
+            }
+        ]
+    },
+    {
+        "_id": "635a0c0b64a6d231228942af",
+        "service_id": "05",
+        "title": "Manicure & Pedicure",
+        "img": "https://i.ibb.co/6ZZwTkx/manicure-1.jpg",
+        "price": "35.00",
+        "description": "Indulge in our manicure and pedicure service that includes nail shaping, cuticle care, and a relaxing massage. Finish with your choice of polish or natural buffing for a polished look. Ideal for maintaining healthy nails and enjoying a bit of relaxation.",
+        "facility": [
+            {
+                "name": "Instant Beauty Services",
+                "details": "Our mobile service brings the spa experience directly to your home or office."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Our team is available day and night to fit your schedule."
+            },
+            {
+                "name": "Easy Booking",
+                "details": "Schedule your mani-pedi appointment with just a few clicks."
+            },
+            {
+                "name": "Affordable Luxury",
+                "details": "Pamper your hands and feet with our premium services at budget-friendly rates."
+            }
+        ]
+    },
+    {
+        "_id": "635b591a1dafe382a9da8c96",
+        "service_id": "01",
+        "title": "Full Body Massage",
+        "img": "https://i.ibb.co/K6rD92S/spa-1.jpg",
+        "price": "120.00",
+        "description": "Relax and unwind with our full body massage, tailored to your specific needs. Whether you're looking to relieve stress, ease muscle tension, or simply indulge in some 'me time,' our professional massage therapists will leave you feeling rejuvenated and relaxed.",
+        "facility": [
+            {
+                "name": "Instant Beauty Services",
+                "details": "Our massage services are available wherever you are, whenever you need them."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Professional massage therapists available at any hour to suit your schedule."
+            },
+            {
+                "name": "Easy Booking",
+                "details": "Book your massage effortlessly through our user-friendly platform."
+            },
+            {
+                "name": "Affordable Luxury",
+                "details": "Enjoy a luxury massage experience at an affordable price."
+            }
+        ]
+    },
+    {
+        "_id": "635b5afc1dafe382a9da8c98",
+        "service_id": "02",
+        "title": "Hair Styling & Color",
+        "img": "https://i.ibb.co/8gSTbPp/haircolor-1.jpg",
+        "price": "100.00",
+        "description": "Transform your look with our professional hair styling and color services. From classic cuts to the latest trends, our expert stylists will help you achieve the look you desire. We use top-quality products to ensure your hair stays healthy and vibrant.",
+        "facility": [
+            {
+                "name": "Instant Beauty Services",
+                "details": "Enjoy professional hair services in the comfort of your home."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Our stylists are ready to serve you at any time, day or night."
+            },
+            {
+                "name": "Easy Booking",
+                "details": "Set up your hair appointment quickly and easily with our intuitive booking system."
+            },
+            {
+                "name": "Affordable Luxury",
+                "details": "Get salon-quality hair services without the salon price tag."
+            }
+        ]
+    },
+    {
+        "_id": "635b5b691dafe382a9da8c99",
+        "service_id": "03",
+        "title": "Makeup Application",
+        "img": "https://i.ibb.co/2qmfmsy/makeup-1.jpg",
+        "price": "75.00",
+        "description": "Look your best for any occasion with our professional makeup application service. Our makeup artists use high-end products and techniques to enhance your natural beauty, whether you're preparing for a special event or just want to treat yourself to a glamorous look.",
+        "facility": [
+            {
+                "name": "Instant Beauty Services",
+                "details": "Our expert makeup artists come to you, wherever you are."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Available anytime you need a professional makeup artist."
+            },
+            {
+                "name": "Easy Booking",
+                "details": "Book your makeup appointment online with ease."
+            },
+            {
+                "name": "Affordable Luxury",
+                "details": "Enjoy a flawless makeup application at a price you'll love."
+            }
+        ]
+    },
+    {
+        "_id": "635b5ba51dafe382a9da8c9a",
+        "service_id": "06",
+        "title": "Waxing Services",
+        "img": "https://i.ibb.co/rFvsNFx/waxing-1.jpg",
+        "price": "40.00",
+        "description": "Achieve smooth, hair-free skin with our professional waxing services. We offer a range of options including full body, bikini, and facial waxing, all performed by experienced technicians using gentle, high-quality waxes for minimal discomfort and long-lasting results.",
+        "facility": [
+            {
+                "name": "Instant Beauty Services",
+                "details": "Our waxing experts will come to your location for a private and convenient service."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Get waxed at a time that suits your busy schedule."
+            },
+            {
+                "name": "Easy Booking",
+                "details": "Schedule your waxing appointment online quickly and easily."
+            },
+            {
+                "name": "Affordable Luxury",
+                "details": "Enjoy smooth, hair-free skin without breaking the bank."
+            }
+        ]
+    }
+]
