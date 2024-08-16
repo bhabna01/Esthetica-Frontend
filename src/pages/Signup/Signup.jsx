@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
+
 import Lottie from "lottie-react";
 
 import animationData from "../../../public/Animation - 1723827283809.json"
-import { Link } from "react-router-dom";
-const Login = () => {
-    const handleLogin = event => {
+const Signup = () => {
+    const handleSignup = event => {
 
     }
     return (
@@ -18,14 +19,20 @@ const Login = () => {
                     <Lottie animationData={animationData} style={{ width: 700, height: 500 }} />
                 </div>
 
-                <div className="card bg-base-100 sm:justify-center lg:w-[700px] lg:h-[500px] max-w-sm shrink-0 shadow-2xl">
-                    <h1 className="text-2xl font-bold text-center mt-9">Login now</h1>
-                    <form onSubmit={handleLogin} className="card-body">
+                <div className="card bg-base-100 sm:justify-center lg:w-[700px]  max-w-sm shrink-0 shadow-2xl">
+                    <h1 className="text-2xl font-bold text-center mt-6">Sign Up</h1>
+                    <form onSubmit={handleSignup} className="card-body">
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Name</span>
+                            </label>
+                            <input type="text" name="name" placeholder="name" className="input input-bordered" required />
+                        </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
-                            <input name="email" type="email" placeholder="email" className="input input-bordered" required />
+                            <input type="email" name="email" placeholder="email" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
@@ -37,14 +44,14 @@ const Login = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Login</button>
+                            <button className="btn btn-primary">Sign Up</button>
                         </div>
                     </form>
-                    <p className="text-center mb-8">New to this website?<Link className="text-primary" to='/signup'>Sign Up</Link></p>
+                    <p className="text-center mb-8">Have an Account?<Link className="text-primary" to='/login'>Login</Link></p>
                 </div>
             </div>
         </div>
     );
 };
 
-export default Login;
+export default Signup;
