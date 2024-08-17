@@ -1,6 +1,5 @@
 [
     {
-        "_id": "635a0c0b64a6d231228942ae",
         "service_id": "04",
         "title": "Facial Treatment",
         "img": "https://i.ibb.co/dp75HCS/pic1.jpg",
@@ -26,7 +25,6 @@
         ]
     },
     {
-        "_id": "635a0c0b64a6d231228942af",
         "service_id": "05",
         "title": "Manicure & Pedicure",
         "img": "https://i.ibb.co/6ZZwTkx/manicure-1.jpg",
@@ -52,7 +50,6 @@
         ]
     },
     {
-        "_id": "635b591a1dafe382a9da8c96",
         "service_id": "01",
         "title": "Full Body Massage",
         "img": "https://i.ibb.co/K6rD92S/spa-1.jpg",
@@ -78,7 +75,6 @@
         ]
     },
     {
-        "_id": "635b5afc1dafe382a9da8c98",
         "service_id": "02",
         "title": "Hair Styling & Color",
         "img": "https://i.ibb.co/8gSTbPp/haircolor-1.jpg",
@@ -104,7 +100,6 @@
         ]
     },
     {
-        "_id": "635b5b691dafe382a9da8c99",
         "service_id": "03",
         "title": "Makeup Application",
         "img": "https://i.ibb.co/2qmfmsy/makeup-1.jpg",
@@ -130,7 +125,6 @@
         ]
     },
     {
-        "_id": "635b5ba51dafe382a9da8c9a",
         "service_id": "06",
         "title": "Waxing Services",
         "img": "https://i.ibb.co/rFvsNFx/waxing-1.jpg",
