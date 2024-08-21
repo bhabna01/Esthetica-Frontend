@@ -6,7 +6,7 @@ import Services from '../Services/Services';
 
 const Home = () => {
     return (
-        <div>
+        <div data-aos="fade-up">
             <Banner></Banner>
             <About></About>
             <Services></Services>
