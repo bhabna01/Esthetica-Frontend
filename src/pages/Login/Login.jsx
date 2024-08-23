@@ -1,13 +1,12 @@
 import Lottie from "lottie-react";
 
 import animationData from "../../../public/Animation - 1723827283809.json"
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "../../providers/AuthProvider";
-import axios from "axios";
+import { Link, useNavigate } from "react-router-dom";
+
+
+import useAuth from "../../hooks/useAuth";
 const Login = () => {
-    const { signIn } = useContext(AuthContext);
-    const location = useLocation()
+    const { signIn } = useAuth();
     const navigate = useNavigate()
     const handleLogin = event => {
         event.preventDefault();
@@ -17,18 +16,9 @@ const Login = () => {
 
         signIn(email, password)
             .then(result => {
-                const loggedInUser = result.user;
-                console.log(loggedInUser);
+                console.log(result.data)
 
-                const user = { email }
-                // get access token
-                axios.post('http://localhost:5000/jwt', user, { withCredentials: true })
-                    .then(res => {
-                        console.log(res.data)
-                        if (res.data.success) {
-                            navigate(location?.state ? location?.state : '/')
-                        }
-                    })
+                navigate('/')
 
 
             })
@@ -36,39 +26,7 @@ const Login = () => {
 
     }
     return (
-        // <div className="hero bg-base-200 min-h-screen">
-        //     <div className="hero-content flex-col lg:flex-row">
 
-        //         <div className=" ">
-        //             <Lottie animationData={animationData} style={{ width: 700, height: 500 }} />
-        //         </div>
-
-        //         <div className="card bg-base-100 sm:justify-center lg:w-[700px] lg:h-[500px] max-w-sm shrink-0 shadow-2xl">
-        //             <h1 className="text-2xl font-bold text-center mt-9">Login now</h1>
-        //             <form onSubmit={handleLogin} className="card-body">
-        //                 <div className="form-control">
-        //                     <label className="label">
-        //                         <span className="label-text">Email</span>
-        //                     </label>
-        //                     <input name="email" type="email" placeholder="email" className="input input-bordered" required />
-        //                 </div>
-        //                 <div className="form-control">
-        //                     <label className="label">
-        //                         <span className="label-text">Password</span>
-        //                     </label>
-        //                     <input name="password" type="password" placeholder="password" className="input input-bordered" required />
-        //                     <label className="label">
-        //                         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-        //                     </label>
-        //                 </div>
-        //                 <div className="form-control mt-6">
-        //                     <input className="btn btn-primary" type="submit" value="Login" />
-        //                 </div>
-        //             </form>
-        //             <p className="text-center mb-8">New to this website?<Link className="text-primary" to='/signup'>Sign Up</Link></p>
-        //         </div>
-        //     </div>
-        // </div>
         <div className="hero bg-base-200 min-h-screen flex justify-center items-center">
             <div className="hero-content flex-col lg:flex-row-reverse lg:justify-center lg:items-center">
                 <div className="lg:hidden mt-6 flex justify-center">

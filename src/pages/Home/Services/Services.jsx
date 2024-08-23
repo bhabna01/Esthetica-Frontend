@@ -1,36 +1,69 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import ServiceCard from "./ServiceCard";
+import useService from "../../../hooks/useService";
 
 
 const Services = () => {
-    const [services, setServices] = useState([])
-    useEffect(() => {
-        fetch('http://localhost:5000/services')
-            .then(res => res.json())
-            .then(data => setServices(data))
-    })
+
+    const [asc, setAsc] = useState(true);
+    const [search, setSearch] = useState('');
+    // const [min, setMin] = useState('');
+    // const [max, setMax] = useState('');
+    const services = useService(asc, search);
+
+    const handleSearch = e => {
+        e.preventDefault();
+        e.preventDefault();
+        const searchText = e.target.search.value;
+        // console.log(searchText);
+        setSearch(searchText);
+
+        // setSearch(searchText);
+        // setMin(minPrice);
+        // setMax(maxPrice);
+    }
     return (
-        // <div className="mt-4">
-        //     <div className="text-center">
-        //         <h3 className="text-2xl font-bold text-orange-600">Our Services</h3>
-        //         <h2 className="text-5xl">Our Service Area</h2>
-        //         <p>Experience pure elegance with treatments that are carefully crafted,<br></br> free from random trends and filled with genuine care and expertise—because your beauty deserves nothing less. </p>
-        //     </div>
-        //     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        //         {
-        //             services.map(service => <ServiceCard
-        //                 key={service._id}
-        //                 service={service}
-        //             ></ServiceCard>)
-        //         }
-        //     </div>
-        // </div>
+
+
         <div className="mt-4">
-            <div className="text-center">
+            <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-orange-600">Our Services</h3>
-                <h2 className="text-5xl">Our Service Area</h2>
-                <p>Experience pure elegance with treatments that are carefully crafted,<br /> free from random trends and filled with genuine care and expertise—because your beauty deserves nothing less.</p>
+                <h2 className="text-5xl mb-4">Our Service Area</h2>
+                <p className="mb-6">The majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable.</p>
+
+                <form onSubmit={handleSearch} className="flex justify-center gap-4 mb-4">
+                    <input
+                        type="text"
+                        name="search"
+                        placeholder="Search Services"
+                        className="input input-bordered w-full max-w-xs"
+                    />
+                    {/* <input
+                        type="number"
+                        name="min"
+                        placeholder="Min Price"
+                        className="input input-bordered w-full max-w-xs"
+                    />
+                    <input
+                        type="number"
+                        name="max"
+                        placeholder="Max Price"
+                        className="input input-bordered w-full max-w-xs"
+                    /> */}
+                    <input
+                        type="submit"
+                        value="Search"
+                        className="btn btn-primary"
+                    />
+                </form>
+
+                <button
+                    className="btn btn-secondary"
+                    onClick={() => setAsc(!asc)}
+                >
+                    {asc ? 'Sort by Price: High to Low' : 'Sort by Price: Low To High'}
+                </button>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
                 {services.map(service => (
