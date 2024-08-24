@@ -2,7 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import BookingRow from "./BookingRow";
 import { AuthContext } from "../../providers/AuthProvider";
 import axios from "axios";
-
+import BannerWall from "../../components/BannerWall";
+import bannerImage from "../../assets/Service.jpg"
 
 const Bookings = () => {
     const { user } = useContext(AuthContext)
@@ -55,38 +56,50 @@ const Bookings = () => {
 
     }
     return (
-        <div className="p-8 bg-white shadow-md rounded-lg">
-            <h2 className="text-5xl font-bold text-center text-gray-800 mb-6">Your bookings: {bookings.length}</h2>
-            <div className="overflow-x-auto w-full rounded-lg shadow-lg">
-                <table className="table w-full text-center">
-                    {/* Table Head */}
-                    <thead className="bg-gradient-to-r from-primary to-secondary text-white">
-                        <tr>
-                            <th>
-                                <label>
-                                    <input type="checkbox" className="checkbox checkbox-primary" />
-                                </label>
-                            </th>
-                            <th>Image</th>
-                            <th>Service</th>
-                            <th>Date</th>
-                            <th>Price</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            bookings.map(booking => (
-                                <BookingRow
-                                    key={booking._id}
-                                    booking={booking}
-                                    handleDelete={handleDelete}
-                                    handleBookingConfirm={handleBookingConfirm}
-                                />
-                            ))
-                        }
-                    </tbody>
-                </table>
+        <div>
+            <BannerWall
+                title="My Bookings"
+                subtitle="Home/My Bookings"
+                backgroundImage={bannerImage}
+
+            >
+
+            </BannerWall>
+
+            <div className="p-8 bg-white shadow-md rounded-lg">
+
+                <h2 className="text-5xl font-bold text-center text-gray-800 mb-6">Your bookings: {bookings.length}</h2>
+                <div className="overflow-x-auto w-full rounded-lg shadow-lg">
+                    <table className="table w-full text-center">
+                        {/* Table Head */}
+                        <thead className="bg-gradient-to-r from-primary to-secondary text-white">
+                            <tr>
+                                <th>
+                                    <label>
+                                        <input type="checkbox" className="checkbox checkbox-primary" />
+                                    </label>
+                                </th>
+                                <th>Image</th>
+                                <th>Service</th>
+                                <th>Date</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                bookings.map(booking => (
+                                    <BookingRow
+                                        key={booking._id}
+                                        booking={booking}
+                                        handleDelete={handleDelete}
+                                        handleBookingConfirm={handleBookingConfirm}
+                                    />
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 

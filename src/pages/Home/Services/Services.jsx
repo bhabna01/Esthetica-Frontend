@@ -58,12 +58,14 @@ const Services = () => {
                     />
                 </form>
 
+
                 <button
-                    className="btn btn-secondary"
+                    className="btn btn-secondary "
                     onClick={() => setAsc(!asc)}
                 >
                     {asc ? 'Sort by Price: High to Low' : 'Sort by Price: Low To High'}
                 </button>
+
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
                 {services.map(service => (

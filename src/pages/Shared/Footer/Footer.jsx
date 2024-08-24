@@ -2,66 +2,34 @@
 import logo from "../../../assets/logo-svg.jpg"
 const Footer = () => {
     return (
-        // <footer className="footer bg-base-200 text-base-content p-10">
-        //     <aside>
-        //         <img src={logo}></img>
-        //         <p>
-        //             Esthetica Salon
-        //             <br />
-        //             Providing reliable service since 2018
-        //         </p>
-        //     </aside>
-        //     <nav>
-        //         <h6 className="footer-title">Services</h6>
-        //         <a className="link link-hover">Branding</a>
-        //         <a className="link link-hover">Design</a>
-        //         <a className="link link-hover">Marketing</a>
-        //         <a className="link link-hover">Advertisement</a>
-        //     </nav>
-        //     <nav>
-        //         <h6 className="footer-title">Company</h6>
-        //         <a className="link link-hover">About us</a>
-        //         <a className="link link-hover">Contact</a>
-        //         <a className="link link-hover">Jobs</a>
-        //         <a className="link link-hover">Press kit</a>
-        //     </nav>
-        //     <nav>
-        //         <h6 className="footer-title">Legal</h6>
-        //         <a className="link link-hover">Terms of use</a>
-        //         <a className="link link-hover">Privacy policy</a>
-        //         <a className="link link-hover">Cookie policy</a>
-        //     </nav>
-        // </footer>
-        <footer className="footer bg-base-200 text-base-content p-10 flex flex-wrap justify-between">
-            <aside className="w-full sm:w-auto mb-4 sm:mb-0 flex flex-col items-center sm:items-start">
-                <img src={logo} alt="Esthetica Salon Logo" className="w-24 sm:w-32 md:w-40 mb-4" />
-                <p className="text-center sm:text-left">
-                    Esthetica Salon
+
+
+        <footer className="footer bg-base-200 text-base-content p-10 flex flex-wrap justify-around items-center">
+            <aside className="w-full sm:w-auto mb-6 sm:mb-0 flex flex-col items-center sm:items-start text-center sm:text-left">
+                <img src={logo} alt="Esthetica Salon Logo" className="w-24 sm:w-32 md:w-40 mb-4 transition-transform duration-300 hover:scale-105" />
+                <p className="text-sm sm:text-base">
+                    <strong>Esthetica Salon</strong>
                     <br />
                     Providing reliable service since 2018
                 </p>
             </aside>
-            <nav className="w-full sm:w-auto flex flex-col sm:ml-8">
-                <h6 className="footer-title">Services</h6>
-                <a className="link link-hover">Branding</a>
-                <a className="link link-hover">Design</a>
-                <a className="link link-hover">Marketing</a>
-                <a className="link link-hover">Advertisement</a>
+
+            <nav className="w-full sm:w-auto mb-6 sm:mb-0 flex flex-col items-center sm:items-start sm:ml-8 text-center sm:text-left">
+                <h6 className="footer-title text-lg font-semibold mb-3 text-primary">Company</h6>
+                <a className="link link-hover mb-2 text-sm sm:text-base transition-colors duration-300 hover:text-primary">About us</a>
+                <a className="link link-hover mb-2 text-sm sm:text-base transition-colors duration-300 hover:text-primary">Contact</a>
+                <a className="link link-hover mb-2 text-sm sm:text-base transition-colors duration-300 hover:text-primary">Jobs</a>
+                <a className="link link-hover text-sm sm:text-base transition-colors duration-300 hover:text-primary">Press kit</a>
             </nav>
-            <nav className="w-full sm:w-auto flex flex-col sm:ml-8">
-                <h6 className="footer-title">Company</h6>
-                <a className="link link-hover">About us</a>
-                <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Jobs</a>
-                <a className="link link-hover">Press kit</a>
-            </nav>
-            <nav className="w-full sm:w-auto flex flex-col sm:ml-8">
-                <h6 className="footer-title">Legal</h6>
-                <a className="link link-hover">Terms of use</a>
-                <a className="link link-hover">Privacy policy</a>
-                <a className="link link-hover">Cookie policy</a>
+
+            <nav className="w-full sm:w-auto  mb-6 flex flex-col items-center sm:items-start sm:ml-8 text-center sm:text-left">
+                <h6 className="footer-title text-lg font-semibold mb-3 text-primary">Legal</h6>
+                <a className="link link-hover mb-2 text-sm sm:text-base transition-colors duration-300 hover:text-primary">Terms of use</a>
+                <a className="link link-hover mb-2 text-sm sm:text-base transition-colors duration-300 hover:text-primary">Privacy policy</a>
+                <a className="link link-hover text-sm sm:text-base transition-colors duration-300 hover:text-primary">Cookie policy</a>
             </nav>
         </footer>
+
 
     );
 };
