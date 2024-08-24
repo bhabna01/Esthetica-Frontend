@@ -55,8 +55,11 @@ To use MongoDB in your project, make sure you have MongoDB set up and running. Y
 Once the application is running:
 
 Explore the Salon: Browse through the services offered at Esthetica, including detailed descriptions and pricing.
+
 Book Appointments: Use the integrated booking form to schedule your next salon visit.
+
 User Accounts: Manage user information and appointments using MongoDB for CRUD operations.
+
 Enjoy Smooth Animations: Experience the application’s elegant animations and transitions powered by AOS and Lottie.
 
 ## Contributing
