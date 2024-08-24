@@ -40,12 +40,19 @@ The app will be available at http://localhost:5173.
 This project relies on several key libraries:
 
 AOS (^2.3.4): A library to animate elements on scroll.
+
 Axios (^1.7.4): A promise-based HTTP client for making requests.
+
 MongoDB: A NoSQL database for storing and managing application data.
+
 Lottie React (^2.4.0): Library to render After Effects animations natively in React.
+
 React (^18.3.1): The core library for building user interfaces.
+
 React DOM (^18.3.1): DOM bindings for React.
+
 React Icons (^5.3.0): Popular icons for React.
+
 React Router DOM (^6.26.0): Declarative routing for React applications.
 
 ## MongoDB Configuration
