@@ -4,9 +4,11 @@ Welcome to **Esthetica Beauty Salon**, a React-based web application designed to
 
 ## Features
 
+
 - **Interactive Animations**: Enhance the user experience with smooth animations using AOS and Lottie animations.
 - **Responsive Design**: Fully responsive design to provide a seamless experience across all devices.
 - **Real-time Data**: Integration with MongoDB for managing real-time data.
+- **User Authentication**: Firebase authentication for secure and reliable user login and registration.
 - **Service Booking**: Customers can explore beauty services and book appointments directly through the site.
 - **Engaging UI**: Utilizes `react-icons` for modern iconography and a clean, stylish interface.
 
@@ -53,6 +55,8 @@ React DOM (^18.3.1): DOM bindings for React.
 
 React Icons (^5.3.0): Popular icons for React.
 
+Firebase (^10.13.0): Authentication services to manage user login and registration.
+
 React Router DOM (^6.26.0): Declarative routing for React applications.
 
 ## MongoDB Configuration
@@ -61,13 +65,13 @@ To use MongoDB in your project, make sure you have MongoDB set up and running. Y
 ## Usage
 Once the application is running:
 
-Explore the Salon: Browse through the services offered at Esthetica, including detailed descriptions and pricing.
+Once the application is running:
 
-Book Appointments: Use the integrated booking form to schedule your next salon visit.
-
-User Accounts: Manage user information and appointments using MongoDB for CRUD operations.
-
-Enjoy Smooth Animations: Experience the application’s elegant animations and transitions powered by AOS and Lottie.
+1. Explore the Salon: Browse through the services offered at Esthetica, including detailed descriptions and pricing.
+2. Book Appointments: Use the integrated booking form to schedule your next salon visit.
+3. User Accounts: Sign up or log in using Firebase authentication.
+4. Manage Data: MongoDB is used for CRUD operations to manage salon data, services, and appointments.
+5. Enjoy Smooth Animations: Experience the application’s elegant animations and transitions powered by AOS and Lottie.
 
 ## Contributing
 Contributions are welcome! If you find a bug or want to add a feature, feel free to open an issue or submit a pull request.
@@ -76,4 +80,4 @@ Contributions are welcome! If you find a bug or want to add a feature, feel free
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Contact
-For questions or support, please contact the project maintainer at your-email@example.com.
+For questions or support, please contact the project maintainer at abierhoque01@gmail.com.
