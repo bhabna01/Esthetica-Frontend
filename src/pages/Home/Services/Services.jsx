@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import { useState } from "react";
 import ServiceCard from "./ServiceCard";
 import useService from "../../../hooks/useService";
@@ -28,7 +28,7 @@ const Services = () => {
 
         <div className="mt-4">
             <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-orange-600">Our Services</h3>
+                <h3 className="text-2xl font-bold text-primary">Our Services</h3>
                 <h2 className="text-5xl mb-4">Our Service Area</h2>
                 <p className="mb-6">The majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable.</p>
 

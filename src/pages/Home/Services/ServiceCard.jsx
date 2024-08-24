@@ -11,7 +11,7 @@ const ServiceCard = ({ service }) => {
             </figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
-                <p className="text-xl text-orange-500">Price: ${price}</p>
+                <p className="text-xl text-secondary">Price: ${price}</p>
                 <div className="card-actions justify-end">
                     <Link to={`/book/${_id}`}>
                         <button className="btn btn-primary">Book Now</button>

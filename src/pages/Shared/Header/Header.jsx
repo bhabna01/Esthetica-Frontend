@@ -60,7 +60,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to="/bookings" className="btn btn-outline btn-warning">Appointment</Link>
+                <Link to="/bookings" className="btn btn-outline btn-secondary">Appointment</Link>
             </div>
         </div>
     );
