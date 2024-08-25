@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 export const axiosSecure = axios.create({
-    baseURL: 'http://localhost:5000',
+    baseURL: 'https://esthetica-backend.vercel.app',
     withCredentials: true
 })
 const useAxiosSecure = () => {

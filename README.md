@@ -2,6 +2,10 @@
 
 Welcome to **Esthetica Beauty Salon**, a React-based web application designed to bring the luxurious experience of a beauty salon online. This project focuses on creating an engaging, user-friendly interface for customers to explore services, make appointments, and interact with Esthetica.
 
+## Live Link
+
+https://esthetica-frontend.web.app
+
 ## Features
 
 

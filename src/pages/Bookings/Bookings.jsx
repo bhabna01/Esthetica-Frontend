@@ -8,7 +8,7 @@ import bannerImage from "../../assets/Service.jpg"
 const Bookings = () => {
     const { user } = useContext(AuthContext)
     const [bookings, setBookings] = useState([])
-    const url = `http://localhost:5000/bookings?email=${user?.email}`
+    const url = `https://esthetica-backend.vercel.app/bookings?email=${user?.email}`
     useEffect(() => {
         axios.get(url, { withCredentials: true })
             .then(res => {
@@ -21,12 +21,12 @@ const Bookings = () => {
     const handleDelete = id => {
         const proceed = confirm("Are You Sure you want to delete")
         if (proceed) {
-            fetch(`http://localhost:5000/bookings/${id}`, {
+            fetch(`https://esthetica-backend.vercel.app/bookings/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data)
+                    // console.log(data)
                     if (data.deletedCount > 0) {
                         alert("Deleted Successfully");
                         const remaining = bookings.filter(booking => booking._id !== id);
@@ -36,7 +36,7 @@ const Bookings = () => {
         }
     }
     const handleBookingConfirm = id => {
-        fetch(`http://localhost:5000/bookings/${id}`, {
+        fetch(`https://esthetica-backend.vercel.app/bookings/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': "application/json"

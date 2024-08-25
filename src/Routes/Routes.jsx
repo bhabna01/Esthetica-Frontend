@@ -30,7 +30,7 @@ const router = createBrowserRouter([
             {
                 path: "/book/:id",
                 element: <PrivateRoute><BookService></BookService></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({ params }) => fetch(`https://esthetica-backend.vercel.app/services/${params.id}`)
             }
             ,
             {
